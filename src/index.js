@@ -15,5 +15,3 @@ ReactDOM
       </Provider>
     </BrowserRouter>,
   );
-
-serviceWorker.unregister();

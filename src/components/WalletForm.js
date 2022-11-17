@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { MdDelete, MdAddCircle } from 'react-icons/md';
 import { FaEdit } from 'react-icons/fa';
 import { addExpenses, deleteAllExpenses, addEditor } from '../redux/actions';
-// import './WalletForm.css';
+import './WalletForm.css';
 import store from '../redux/store';
 
 class WalletForm extends Component {

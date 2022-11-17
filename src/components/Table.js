@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { removeID, addIDtoEditor, addEditor } from '../redux/actions/index';
-// import './Table.css';
+import './Table.css';
 
 class Table extends Component {
   componentDidUpdate() {

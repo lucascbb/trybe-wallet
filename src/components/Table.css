@@ -1,0 +1,90 @@
+.tablePai {
+  align-items: center;
+  background: radial-gradient(circle, rgb(19, 219, 142) 0%, rgb(15, 206, 149) 100%);
+  border-radius: 10px;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  margin: auto;
+  margin-top: -310px;
+  padding: 360px 80px 0;
+  width: 80%;
+}
+
+table {
+  font-family: Bebas Neue, cursive;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.desc , .tag , .method , .value , .moeda , .cambio , .valueConv , .moedaConv {
+  border-right: 1px solid black;
+  width: 300px;
+}
+
+.editDel {
+  width: 300px;
+}
+
+.paiResultTable {
+  text-align: center;
+}
+
+.desc2 , .tag2 , .method2 , .value2 , .moeda2 {
+  border-top: 2px solid rgb(179, 179, 179);
+  color: rgb(249, 249, 249);
+  font-weight: 900;
+  max-width: 300px;
+  overflow: hidden;
+  padding: 20px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cambio2 , .valueConv2 , .moedaConv2 , .editDel2 {
+  border-top: 2px solid rgb(179, 179, 179);
+  color: rgb(249, 249, 249);
+  font-weight: 900;
+  max-width: 300px;
+  overflow: hidden;
+  padding: 0 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.btnEditTable {
+  cursor: pointer;
+  font-size: 30px;
+  left: 50px;
+  margin: -20px 0 0 0.7rem;
+  position: relative;
+  top: -40px;
+  visibility: hidden;
+}
+
+.btnEditTable:before {
+  content: url('https://cdn-icons-png.flaticon.com/512/159/159077.png?w=826&t=st=1668185522~exp=1668186122~hmac=780fcf294dd26d48a4554752b933cab427299666630632657bc2753b4b3b020b');
+  position: absolute;
+  right: -180px;
+  top: -202px;
+  transform: scale(0.08);
+  visibility: visible;
+}
+
+.btnDelTable {
+  cursor: pointer;
+  font-size: 30px;
+  margin: -20px 0 0 0.7rem;
+  position: relative;
+  right: 60px;
+  visibility: hidden;
+}
+
+.btnDelTable:before {
+  content: url('https://cdn-icons-png.flaticon.com/512/1251/1251041.png?w=826&t=st=1668185964~exp=1668186564~hmac=aa56f6a7cba9ffa4414babd975553c91ade76fa74be96f9902d47cef50fce43d');
+  position: absolute;
+  right: -230px;
+  top: -240px;
+  transform: scale(0.08);
+  visibility: visible;
+}

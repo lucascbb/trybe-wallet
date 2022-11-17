@@ -1,0 +1,80 @@
+header {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-family: Bebas Neue, cursive;
+  justify-content: space-between;
+  letter-spacing: 2px;
+  margin: auto;
+  text-align: center;
+}
+
+.moneyHeader {
+  background-color: rgb(218, 211, 211);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px 2px rgb(57, 57, 57);
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  max-height: 50px;
+  padding: 10px;
+}
+
+.profileHeader {
+  display: flex;
+  margin-top: 30px;
+}
+
+.IconProfile {
+  font-size: 32px;
+  font-weight: 900;
+  margin: 8px 10px 0 0;
+}
+
+.emailHeader {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  margin-right: 30px;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 300px;
+}
+
+.img2Logo {
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 300px;
+}
+
+.totalHeader {
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 10px;
+  margin-top: 17px;
+}
+
+.valorHeader , .totalAtt {
+  font-size: 20px;
+  height: 24px;
+  margin-right: 10px;
+  margin-top: 15px;
+  max-width: 145px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.brlHeader {
+  font-size: 20px;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+.iconCoin {
+  font-size: 30px;
+  margin: 0 15px 0 20px;
+  margin-top: 15px;
+}

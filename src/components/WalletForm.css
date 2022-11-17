@@ -1,0 +1,187 @@
+.formPai {
+  display: flex;
+  flex-direction: column;
+  font-family: Bebas Neue, cursive;
+  letter-spacing: 2px;
+  margin-top: 40px;
+}
+
+.inputsForm {
+  align-items: center;
+  background-color: rgba(210, 210, 210, 0.665);
+  display: flex;
+  flex-flow: row wrap;
+  height: 200px;
+  justify-content: center;
+  text-align: center;
+}
+
+.labelDesc {
+  margin: 0 30px;
+}
+
+.descInput {
+  background-color: rgb(234, 234, 234);
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-left: 15px;
+  padding: 10px;
+  width: 300px;
+}
+
+.tagInput {
+  background-color: rgb(234, 234, 234);
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  margin: 10px 40px 0 15px;
+  padding: 10px;
+  padding-right: 20px;
+  width: 300px;
+}
+
+.valueInput {
+  background-color: rgb(234, 234, 234);
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 10px 40px 0 15px;
+  padding: 10px;
+  width: 200px;
+}
+
+.methodInput {
+  background-color: rgb(234, 234, 234);
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  margin: 10px 40px 0 15px;
+  padding: 10px;
+  padding-right: 20px;
+  width: 200px;
+}
+
+.currencyInput {
+  background-color: rgb(234, 234, 234);
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  margin: 10px 40px 0 15px;
+  padding: 10px;
+  padding-right: 20px;
+  width: 200px;
+}
+
+.inputsForm label {
+  font-size: 22px;
+}
+
+.btnsForm {
+  align-items: center;
+  display: flex;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.btnAddForm {
+  background: #12c249;
+  border: 0 solid white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px black;
+  color: white;
+  cursor: pointer;
+  font: Tahoma, Geneva, sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  margin: 10px;
+  padding: 15px;
+  width: 502px;
+}
+
+.btnAddForm:hover {
+  transform: scale(1.01);
+}
+
+.btnAddForm:disabled {
+  background-color: #03270e;
+  color: rgb(70, 72, 74);
+  cursor: auto;
+}
+
+.btnAddForm:disabled:hover {
+  transform: scale(1);
+}
+
+.iconBtnAdd {
+  margin: 0 20px;
+  transform: scale(1.5);
+}
+
+.btnEdiForm {
+  background: #1227c2;
+  border: 0 solid white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px black;
+  color: white;
+  cursor: pointer;
+  font: Tahoma, Geneva, sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  margin: 10px;
+  padding: 15px;
+  width: 502px;
+}
+
+.btnEditForm:hover {
+  transform: scale(1.01);
+}
+
+.btnEdiForm:disabled {
+  background: #050c3d;
+  color: rgb(70, 72, 74);
+  cursor: auto;
+}
+
+.btnEditForm:disabled:hover {
+  transform: scale(1);
+}
+
+.iconBtnEdit {
+  margin: 0 15px;
+  transform: scale(1.4);
+}
+
+.btnDelForm {
+  background: #cb0f21;
+  border: 0 solid white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px black;
+  color: white;
+  cursor: pointer;
+  font: Tahoma, Geneva, sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  margin: 10px;
+  padding: 15px;
+  width: 502px;
+}
+
+.btnDelForm:hover {
+  transform: scale(1.01);
+}
+
+.btnDelForm:disabled {
+  background-color: #3f060c;
+  color: rgb(70, 72, 74);
+  cursor: auto;
+}
+
+.btnDelForm:disabled:hover {
+  transform: scale(1);
+}
+
+.iconBtnDel {
+  margin: 0 15px;
+  transform: scale(1.5);
+}

@@ -1,8 +1,8 @@
 {
   "name": "trybe-wallet",
   "homepage" : "https://lucascbb.github.io/trybe-wallet",
-  "version": "1.0.0",
-  "private": false,
+  "version": "1.0.1",
+  "private": true,
   "engines": {
     "node": "16"
   },
@@ -20,7 +20,8 @@
     "react-scripts": "5.0.1",
     "redux": "4.2.0",
     "redux-thunk": "2.4.1",
-    "stylelint-order": "5.0.0"
+    "stylelint-order": "5.0.0",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "predeploy" : "npm run build", 
@@ -36,7 +37,10 @@
     "lint:styles": "npx stylelint '**/*.css'"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -61,7 +65,9 @@
     "mochawesome-merge": "4.2.1",
     "mochawesome-report-generator": "6.2.0",
     "stylelint": "14.9.1",
-    "stylelint-config-standard": "26.0.0"
+    "stylelint-config-standard": "26.0.0",
+    "prop-types": "^15.8.1",
+    "stylelint-order": "5.0.0"
   },
   "jest": {
     "coveragePathIgnorePatterns": [

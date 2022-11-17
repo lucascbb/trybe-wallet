@@ -1,7 +1,7 @@
 {
   "name": "trybe-wallet",
   "homepage" : "https://lucascbb.github.io/trybe-wallet",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "private": true,
   "engines": {
     "node": "16"

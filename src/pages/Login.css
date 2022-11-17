@@ -1,0 +1,65 @@
+body {
+  background-image: url('../imagens/exchange3.jpg');
+  background-position: center -20px;
+  background-size: 100%;
+}
+
+.paiLogin {
+  align-items: center;
+  backdrop-filter: blur(3px);
+  background: rgba(116, 115, 115, 0.669);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  box-shadow: 0 10px 32px 10px rgba(31, 38, 135, 0.37);
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 200px;
+  text-align: center;
+  width: 650px;
+}
+
+.imgLogo {
+  margin: 60px 0;
+  width: 350px;
+}
+
+.emailInput , .senhaInput {
+  border: 1px solid blue;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 400px;
+}
+
+.btnEntrar {
+  background: blue;
+  border: 0 solid white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px black;
+  color: white;
+  cursor: pointer;
+  font: Tahoma, Geneva, sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  margin: 10px 20px;
+  padding: 15px;
+  width: 420px;
+}
+
+.btnEntrar:disabled {
+  background-color: rgb(3, 3, 109);
+  color: rgb(96, 96, 96);
+}
+
+.btnEntrar:hover {
+  box-shadow: 0 3px 5px 1px black;
+  transform: scale(1.02);
+}
+
+.btnEntrar:hover:disabled {
+  box-shadow: 2px 2px 5px black;
+  transform: scale(1);
+}

@@ -1,1 +1,1 @@
-# trybe-wallet
+# page-trybe-wallet

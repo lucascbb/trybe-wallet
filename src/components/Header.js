@@ -14,12 +14,8 @@ class Header extends Component {
     * Number(ele5.value));
     const resultado = cambio.reduce((ele6, index) => ele6 + index);
     return (
-      <p
-        className="totalAtt"
-        data-testid="total-field"
-      >
-        {/* {resultado.toLocaleString('de-DE', { maximumFractionDigits: 2 })} */}
-        {resultado.toFixed(2)}
+      <p className="totalAtt" data-testid="total-field">
+        {`R$ ${resultado.toLocaleString('de-DE', { maximumFractionDigits: 2 })}`}
       </p>
     );
   }
@@ -31,23 +27,17 @@ class Header extends Component {
         <img src={ logo } alt={ ' ' } className="img2Logo" />
         <div className="moneyHeader">
           <BsCashCoin className="iconCoin" />
-          <p className="totalHeader">Total de despesas: R$</p>
+          <p className="totalHeader">Despesa total:</p>
           { expenses.length > 0 ? this.soma()
             : (
               <p
                 data-testid="total-field"
                 className="valorHeader"
               >
-                {/* 00,00 */}
-                0.00
+                R$ 00,00
               </p>
             )}
-          <p
-            className="brlHeader"
-            data-testid="header-currency-field"
-          >
-            BRL
-          </p>
+          <p className="brlHeader">BRL</p>
         </div>
         <div className="profileHeader">
           <CgProfile className="IconProfile" />

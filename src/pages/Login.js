@@ -44,7 +44,7 @@ class Login extends React.Component {
       <div className="bg">
         <main className="paiLogin">
           <img src={ logo } alt={ ' ' } className="imgLogo" />
-          <label htmlFor="email">
+          <label htmlFor="email" className="labelpai">
             <input
               title="Insira um e-mail válido"
               type="text"
@@ -57,7 +57,7 @@ class Login extends React.Component {
               onChange={ this.handleChange }
             />
           </label>
-          <label htmlFor="senha">
+          <label htmlFor="senha" className="labelpai">
             <input
               title="Insira uma senha com no mínimo 6 caracteres"
               type="password"

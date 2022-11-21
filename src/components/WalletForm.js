@@ -123,7 +123,7 @@ class WalletForm extends Component {
               onChange={ this.handleChange2 }
             />
           </label>
-          <label htmlFor="tag">
+          <label htmlFor="tag" className="labelTag">
             Categoria da despesa
             <select
               id="tag"
@@ -140,7 +140,7 @@ class WalletForm extends Component {
               <option value="Saúde" type="submit">Saúde</option>
             </select>
           </label>
-          <label htmlFor="value">
+          <label htmlFor="value" className="labelValue">
             Valor
             <input
               type="number"
@@ -152,7 +152,7 @@ class WalletForm extends Component {
               onChange={ this.handleChange2 }
             />
           </label>
-          <label htmlFor="method">
+          <label htmlFor="method" className="labelMethod">
             Método de pagamento
             <select
               id="method"
@@ -167,7 +167,7 @@ class WalletForm extends Component {
               <option value="Cartão de débito" type="submit">Cartão de débito</option>
             </select>
           </label>
-          <label htmlFor="currency">
+          <label htmlFor="currency" className="labelCurrency">
             Moeda
             <select
               id="currency"
@@ -212,7 +212,7 @@ class WalletForm extends Component {
             onClick={ this.delete }
           >
             <MdDelete className="iconBtnDel" />
-            Deletar Todas
+            Deletar todas despesas
           </button>
         </section>
       </form>

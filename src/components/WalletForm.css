@@ -1,89 +1,105 @@
-@media ( min-width : 320px ) and ( max-width : 480px ) {
+@media ( min-width : 320px ) {
 
   .formPai {
+    align-items: center;
     display: flex;
     flex-direction: column;
     font-family: Bebas Neue, cursive;
     letter-spacing: 2px;
     margin-top: 40px;
+    position: relative;
+    z-index: -3;
   }
 
   .inputsForm {
     align-items: center;
-    background-color: rgba(210, 210, 210, 0.665);
+    background-color: rgb(179, 192, 190);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     display: flex;
-    flex-flow: row wrap;
-    height: 200px;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
+    margin: auto 0;
+    margin-top: -22px;
+    padding: 10px;
+    width: 85%;
   }
 
   .labelDesc {
-    margin: 0 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
   }
 
   .descInput {
-    background-color: rgb(234, 234, 234);
-    border: none;
+    border: 1px solid blue;
     border-radius: 10px;
-    font-size: 20px;
-    margin-left: 15px;
-    padding: 10px;
-    width: 300px;
+    height: 25px;
+    width: 220px;
+  }
+
+  .labelTag {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
   }
 
   .tagInput {
-    background-color: rgb(234, 234, 234);
-    border: none;
+    border: 1px solid blue;
     border-radius: 10px;
-    font-size: 18px;
-    margin: 10px 40px 0 15px;
-    padding: 10px;
-    padding-right: 20px;
-    width: 300px;
+    height: 30px;
+    width: 225px;
+  }
+
+  .labelValue {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
   }
 
   .valueInput {
-    background-color: rgb(234, 234, 234);
-    border: none;
+    background-color: #f8f8f8;
+    border: 1px solid blue;
     border-radius: 10px;
-    font-size: 20px;
-    margin: 10px 40px 0 15px;
-    padding: 10px;
-    width: 200px;
+    height: 25px;
+    width: 220px;
+  }
+
+  .labelMethod {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
   }
 
   .methodInput {
-    background-color: rgb(234, 234, 234);
-    border: none;
+    border: 1px solid blue;
     border-radius: 10px;
-    font-size: 18px;
-    margin: 10px 40px 0 15px;
-    padding: 10px;
-    padding-right: 20px;
-    width: 200px;
+    height: 30px;
+    width: 225px;
+  }
+
+  .labelCurrency {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
   }
 
   .currencyInput {
-    background-color: rgb(234, 234, 234);
-    border: none;
+    border: 1px solid blue;
     border-radius: 10px;
-    font-size: 18px;
-    margin: 10px 40px 0 15px;
-    padding: 10px;
-    padding-right: 20px;
-    width: 200px;
-  }
-
-  .inputsForm label {
-    font-size: 22px;
+    height: 30px;
+    width: 225px;
   }
 
   .btnsForm {
     align-items: center;
     display: flex;
     margin: auto;
-    margin-top: 15px;
   }
 
   .btnAddForm {
@@ -94,25 +110,20 @@
     color: white;
     cursor: pointer;
     font: Tahoma, Geneva, sans-serif;
-    font-size: 24px;
+    font-size: 15px;
     font-weight: 900;
-    margin: 10px;
-    padding: 15px;
-    width: 100px;
-  }
-
-  .btnAddForm:hover {
-    transform: scale(1.01);
+    height: 70px;
+    margin: 5px 0;
+    padding: 10px;
+    transform: scale(0.85);
+    width: 130px;
   }
 
   .btnAddForm:disabled {
     background-color: #03270e;
     color: rgb(70, 72, 74);
     cursor: auto;
-  }
-
-  .btnAddForm:disabled:hover {
-    transform: scale(1);
+    transform: scale(0.85);
   }
 
   .iconBtnAdd {
@@ -128,11 +139,13 @@
     color: white;
     cursor: pointer;
     font: Tahoma, Geneva, sans-serif;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 900;
-    margin: 10px;
-    padding: 15px;
-    width: 100px;
+    height: 70px;
+    margin: 5px 0;
+    padding: 10px;
+    transform: scale(0.85);
+    width: 130px;
   }
 
   .btnEditForm:hover {
@@ -162,15 +175,13 @@
     color: white;
     cursor: pointer;
     font: Tahoma, Geneva, sans-serif;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 900;
-    margin: 10px;
-    padding: 15px;
-    width: 100px;
-  }
-
-  .btnDelForm:hover {
-    transform: scale(1.01);
+    height: 70px;
+    margin: 5px 0;
+    padding: 10px;
+    transform: scale(0.85);
+    width: 130px;
   }
 
   .btnDelForm:disabled {
@@ -179,13 +190,1015 @@
     cursor: auto;
   }
 
-  .btnDelForm:disabled:hover {
-    transform: scale(1);
-  }
-
   .iconBtnDel {
-    margin: 0 15px;
+    margin: 0 20px;
     transform: scale(1.5);
   }
 
+}
+
+@media ( min-width : 375px ) {
+
+  .formPai {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Bebas Neue, cursive;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    position: relative;
+    z-index: -3;
+  }
+
+  .inputsForm {
+    align-items: center;
+    background-color: rgb(179, 192, 190);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    justify-content: center;
+    margin: auto 0;
+    margin-top: -22px;
+    padding: 10px;
+    width: 85%;
+  }
+
+  .labelDesc {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 10px;
+  }
+
+  .descInput {
+    border: 1px solid blue;
+    border-radius: 10px;
+    height: 25px;
+    width: 220px;
+  }
+
+  .labelTag {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+  }
+
+  .tagInput {
+    background-color: #f8f8f8;
+    border: 1px solid blue;
+    border-radius: 10px;
+    height: 33px;
+    width: 232px;
+  }
+
+  .labelValue {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+  }
+
+  .valueInput {
+    background-color: #f8f8f8;
+    border: 1px solid blue;
+    border-radius: 10px;
+    height: 25px;
+    width: 220px;
+  }
+
+  .labelMethod {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+  }
+
+  .methodInput {
+    border: 1px solid blue;
+    border-radius: 10px;
+    height: 33px;
+    width: 232px;
+  }
+
+  .labelCurrency {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+  }
+
+  .currencyInput {
+    border: 1px solid blue;
+    border-radius: 10px;
+    height: 33px;
+    margin-bottom: 10px;
+    width: 232px;
+  }
+
+  .btnsForm {
+    align-items: center;
+    display: flex;
+    margin: auto;
+  }
+
+  .btnAddForm {
+    background: #12c249;
+    border: 0 solid white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    cursor: pointer;
+    font: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    height: 70px;
+    margin: 5px;
+    padding: 10px;
+    width: 120px;
+  }
+
+  .btnAddForm:disabled {
+    background-color: #03270e;
+    color: rgb(70, 72, 74);
+    cursor: auto;
+  }
+
+  .iconBtnAdd {
+    font-size: 18px;
+    margin: 2px 20px 0;
+  }
+
+  .btnEdiForm {
+    background: #1227c2;
+    border: 0 solid white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    cursor: pointer;
+    font: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    height: 70px;
+    margin: 5px;
+    padding: 10px;
+    width: 120px;
+  }
+
+  .btnEdiForm:disabled {
+    background: #050c3d;
+    color: rgb(70, 72, 74);
+    cursor: auto;
+  }
+
+  .iconBtnEdit {
+    font-size: 18px;
+    margin: 2px 30px 0;
+  }
+
+  .btnDelForm {
+    background: #cb0f21;
+    border: 0 solid white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    cursor: pointer;
+    font: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    height: 70px;
+    margin: 5px;
+    padding: 10px;
+    width: 120px;
+  }
+
+  .btnDelForm:disabled {
+    background-color: #3f060c;
+    color: rgb(70, 72, 74);
+    cursor: auto;
+  }
+
+  .iconBtnDel {
+    font-size: 18px;
+    margin: 2px 30px 0;
+  }
+
+}
+
+@media ( min-width : 425px ) {
+
+  .formPai {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Bebas Neue, cursive;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    position: relative;
+    z-index: -3;
+  }
+
+  .inputsForm {
+    align-items: center;
+    background-color: rgb(179, 192, 190);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    height: 360px;
+    justify-content: center;
+    margin: auto 0;
+    margin-top: -82px;
+    padding: 80px 0 15px;
+    width: 85%;
+  }
+
+  .labelDesc {
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    margin: 5px 10px;
+  }
+
+  .descInput {
+    border: 1px solid blue;
+    border-radius: 10px;
+    font-size: 16px;
+    height: 25px;
+    margin: 10px;
+    padding: 2px;
+    padding-left: 10px;
+    width: 220px;
+  }
+
+  .labelTag {
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+  .tagInput {
+    background-color: #f8f8f8;
+    border: 1px solid blue;
+    border-radius: 10px;
+    height: 33px;
+    width: 232px;
+  }
+
+  .labelValue {
+    align-items: center;
+    display: flex;
+    margin: 5px 0;
+  }
+
+  .valueInput {
+    border: 1px solid blue;
+    border-radius: 10px;
+    font-size: 16px;
+    height: 25px;
+    margin: 10px;
+    padding: 2px;
+    padding-left: 10px;
+    width: 220px;
+  }
+
+  .labelMethod {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+  }
+
+  .methodInput {
+    border: 1px solid blue;
+    border-radius: 10px;
+    height: 33px;
+    width: 232px;
+  }
+
+  .labelCurrency {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+  }
+
+  .currencyInput {
+    border: 1px solid blue;
+    border-radius: 10px;
+    height: 33px;
+    margin-bottom: 10px;
+    width: 232px;
+  }
+
+  .btnsForm {
+    align-items: center;
+    display: flex;
+    margin: auto;
+  }
+
+  .btnAddForm {
+    background: #12c249;
+    border: 0 solid white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    cursor: pointer;
+    font: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    height: 70px;
+    margin: 5px;
+    padding: 10px;
+    width: 160px;
+  }
+
+  .btnAddForm:disabled {
+    background-color: #03270e;
+    color: rgb(70, 72, 74);
+    cursor: auto;
+  }
+
+  .iconBtnAdd {
+    font-size: 18px;
+    margin: 2px 40px 5px;
+  }
+
+  .btnEdiForm {
+    background: #1227c2;
+    border: 0 solid white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    cursor: pointer;
+    font: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    height: 70px;
+    margin: 5px;
+    padding: 10px;
+    width: 160px;
+  }
+
+  .btnEdiForm:disabled {
+    background: #050c3d;
+    color: rgb(70, 72, 74);
+    cursor: auto;
+  }
+
+  .iconBtnEdit {
+    font-size: 18px;
+    margin: 2px 65px 5px;
+  }
+
+  .btnDelForm {
+    background: #cb0f21;
+    border: 0 solid white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    cursor: pointer;
+    font: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    height: 70px;
+    margin: 5px;
+    padding: 10px;
+    width: 160px;
+  }
+
+  .btnDelForm:disabled {
+    background-color: #3f060c;
+    color: rgb(70, 72, 74);
+    cursor: auto;
+  }
+
+  .iconBtnDel {
+    font-size: 18px;
+    margin: 2px 50px 5px;
+  }
+}
+
+@media ( min-width : 768px ) {
+
+  .formPai {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Bebas Neue, cursive;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    position: relative;
+    z-index: -3;
+  }
+
+  .inputsForm {
+    align-items: center;
+    background-color: rgb(179, 192, 190);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    height: 190px;
+    justify-content: space-between;
+    margin: auto 0;
+    margin-top: -52px;
+    padding-top: 50px;
+    width: 90%;
+  }
+
+  .labelDesc {
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin: 5px 10px;
+  }
+
+  .descInput {
+    border: 1px solid blue;
+    border-radius: 10px;
+    font-size: 18px;
+    height: 26px;
+    margin: 10px;
+    padding: 2px;
+    padding-left: 10px;
+    width: 300px;
+  }
+
+  .labelValue {
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin: 5px 10px;
+  }
+
+  .valueInput {
+    border: 1px solid blue;
+    border-radius: 10px;
+    font-size: 18px;
+    height: 28px;
+    margin: 10px;
+    padding: 2px;
+    padding-left: 10px;
+    width: 180px;
+  }
+
+  .labelTag {
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin: 5px 10px;
+  }
+
+  .tagInput {
+    background-color: #f8f8f8;
+    border: 1px solid blue;
+    border-radius: 10px;
+    font-size: 18px;
+    height: 33px;
+    margin: 10px;
+    padding-left: 10px;
+    width: 200px;
+  }
+
+  .labelMethod {
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin: 5px 10px;
+  }
+
+  .methodInput {
+    background-color: #f8f8f8;
+    border: 1px solid blue;
+    border-radius: 10px;
+    font-size: 18px;
+    height: 33px;
+    margin: 10px;
+    padding-left: 10px;
+    width: 190px;
+  }
+
+  .labelCurrency {
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin: 5px 10px;
+  }
+
+  .currencyInput {
+    background-color: #f8f8f8;
+    border: 1px solid blue;
+    border-radius: 10px;
+    font-size: 18px;
+    height: 33px;
+    margin: 10px;
+    padding-left: 10px;
+    width: 100px;
+  }
+
+  .btnsForm {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 640px;
+  }
+
+  .btnAddForm {
+    background: #12c249;
+    border: 0 solid white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    cursor: pointer;
+    font: Tahoma, Geneva, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    height: 70px;
+    width: 350px;
+  }
+
+  .btnAddForm:disabled {
+    background-color: #03270e;
+    color: rgb(70, 72, 74);
+    cursor: auto;
+  }
+
+  .iconBtnAdd {
+    font-size: 24px;
+    margin: -5px 15px;
+  }
+
+  .btnEdiForm {
+    background: #1227c2;
+    border: 0 solid white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    cursor: pointer;
+    font: Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    height: 70px;
+    padding: 10px;
+    width: 350px;
+  }
+
+  .btnEdiForm:disabled {
+    background: #050c3d;
+    color: rgb(70, 72, 74);
+    cursor: auto;
+  }
+
+  .iconBtnEdit {
+    font-size: 24px;
+    margin: -5px 15px;
+  }
+
+  .btnDelForm {
+    background: #cb0f21;
+    border: 0 solid white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    cursor: pointer;
+    font: Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    height: 70px;
+    width: 360px;
+  }
+
+  .btnDelForm:disabled {
+    background-color: #3f060c;
+    color: rgb(70, 72, 74);
+    cursor: auto;
+  }
+
+  .iconBtnDel {
+    font-size: 24px;
+    margin: -5px 15px;
+  }
+}
+
+@media ( min-width : 1024px ) {
+
+  .formPai {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Bebas Neue, cursive;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    position: relative;
+    z-index: -3;
+  }
+
+  .inputsForm {
+    align-items: center;
+    background-color: rgb(179, 192, 190);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    height: 190px;
+    justify-content: space-between;
+    margin: auto 0;
+    margin-top: -92px;
+    padding: 80px 30px 15px;
+    width: 85%;
+  }
+
+  .labelDesc {
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 5px 10px;
+  }
+
+  .descInput {
+    border: 1px solid blue;
+    border-radius: 10px;
+    font-size: 18px;
+    height: 26px;
+    margin: 10px;
+    padding: 2px;
+    padding-left: 10px;
+    width: 340px;
+  }
+
+  .labelValue {
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 5px 10px;
+  }
+
+  .valueInput {
+    border: 1px solid blue;
+    border-radius: 10px;
+    font-size: 18px;
+    height: 28px;
+    margin: 10px;
+    padding: 2px;
+    padding-left: 10px;
+    width: 220px;
+  }
+
+  .labelTag {
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 5px 10px;
+  }
+
+  .tagInput {
+    background-color: #f8f8f8;
+    border: 1px solid blue;
+    border-radius: 10px;
+    font-size: 18px;
+    height: 33px;
+    margin: 10px;
+    padding-left: 10px;
+    width: 250px;
+  }
+
+  .labelMethod {
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 5px 10px;
+  }
+
+  .methodInput {
+    background-color: #f8f8f8;
+    border: 1px solid blue;
+    border-radius: 10px;
+    font-size: 18px;
+    height: 33px;
+    margin: 10px;
+    padding-left: 10px;
+    width: 220px;
+  }
+
+  .labelCurrency {
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 5px 10px;
+  }
+
+  .currencyInput {
+    background-color: #f8f8f8;
+    border: 1px solid blue;
+    border-radius: 10px;
+    font-size: 18px;
+    height: 33px;
+    margin: 10px;
+    padding-left: 10px;
+    width: 150px;
+  }
+
+  .btnsForm {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 640px;
+  }
+
+  .btnAddForm {
+    background: #12c249;
+    border: 0 solid white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    cursor: pointer;
+    font: Tahoma, Geneva, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    height: 70px;
+    width: 450px;
+  }
+
+  .btnAddForm:disabled {
+    background-color: #03270e;
+    color: rgb(70, 72, 74);
+    cursor: auto;
+  }
+
+  .iconBtnAdd {
+    font-size: 24px;
+    margin: -5px 15px;
+  }
+
+  .btnEdiForm {
+    background: #1227c2;
+    border: 0 solid white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    cursor: pointer;
+    font: Tahoma, Geneva, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    height: 70px;
+    padding: 10px;
+    width: 450px;
+  }
+
+  .btnEdiForm:disabled {
+    background: #050c3d;
+    color: rgb(70, 72, 74);
+    cursor: auto;
+  }
+
+  .iconBtnEdit {
+    font-size: 24px;
+    margin: -5px 15px;
+  }
+
+  .btnDelForm {
+    background: #cb0f21;
+    border: 0 solid white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    cursor: pointer;
+    font: Tahoma, Geneva, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    height: 70px;
+    width: 450px;
+  }
+
+  .btnDelForm:disabled {
+    background-color: #3f060c;
+    color: rgb(70, 72, 74);
+    cursor: auto;
+  }
+
+  .iconBtnDel {
+    font-size: 24px;
+    margin: -5px 15px;
+  }
+}
+
+@media ( min-width : 1440px ) {
+
+  .formPai {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Bebas Neue, cursive;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    position: relative;
+    z-index: -3;
+  }
+
+  .inputsForm {
+    align-items: center;
+    background-color: rgb(179, 192, 190);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    height: 190px;
+    justify-content: space-between;
+    margin: auto 0;
+    margin-top: -92px;
+    padding: 80px 30px 15px;
+    width: 85%;
+  }
+
+  .labelDesc {
+    align-items: center;
+    display: flex;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin: 5px 10px;
+  }
+
+  .descInput {
+    border: 1px solid blue;
+    border-radius: 10px;
+    font-size: 20px;
+    height: 26px;
+    margin: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    width: 380px;
+  }
+
+  .labelValue {
+    align-items: center;
+    display: flex;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin: 5px 10px;
+  }
+
+  .valueInput {
+    border: 1px solid blue;
+    border-radius: 10px;
+    font-size: 20px;
+    height: 28px;
+    margin: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    width: 300px;
+  }
+
+  .labelTag {
+    align-items: center;
+    display: flex;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin: 5px 10px;
+  }
+
+  .tagInput {
+    background-color: #f8f8f8;
+    border: 1px solid blue;
+    border-radius: 10px;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    width: 350px;
+  }
+
+  .labelMethod {
+    align-items: center;
+    display: flex;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin: 5px 10px;
+  }
+
+  .methodInput {
+    background-color: #f8f8f8;
+    border: 1px solid blue;
+    border-radius: 10px;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    width: 300px;
+  }
+
+  .labelCurrency {
+    align-items: center;
+    display: flex;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin: 5px 10px;
+  }
+
+  .currencyInput {
+    background-color: #f8f8f8;
+    border: 1px solid blue;
+    border-radius: 10px;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    width: 250px;
+  }
+
+  .btnsForm {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 640px;
+  }
+
+  .btnAddForm {
+    background: #12c249;
+    border: 0 solid white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    cursor: pointer;
+    font: Tahoma, Geneva, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    height: 70px;
+    width: 600px;
+  }
+
+  .btnAddForm:disabled {
+    background-color: #03270e;
+    color: rgb(70, 72, 74);
+    cursor: auto;
+  }
+
+  .iconBtnAdd {
+    font-size: 24px;
+    margin: -5px 15px;
+  }
+
+  .btnEdiForm {
+    background: #1227c2;
+    border: 0 solid white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    cursor: pointer;
+    font: Tahoma, Geneva, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    height: 70px;
+    padding: 10px;
+    width: 600px;
+  }
+
+  .btnEdiForm:disabled {
+    background: #050c3d;
+    color: rgb(70, 72, 74);
+    cursor: auto;
+  }
+
+  .iconBtnEdit {
+    font-size: 24px;
+    margin: -5px 15px;
+  }
+
+  .btnDelForm {
+    background: #cb0f21;
+    border: 0 solid white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    cursor: pointer;
+    font: Tahoma, Geneva, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    height: 70px;
+    width: 600px;
+  }
+
+  .btnDelForm:disabled {
+    background-color: #3f060c;
+    color: rgb(70, 72, 74);
+    cursor: auto;
+  }
+
+  .iconBtnDel {
+    font-size: 24px;
+    margin: -5px 15px;
+  }
 }

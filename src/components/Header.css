@@ -1,4 +1,4 @@
-@media ( min-width : 320px ) and ( max-width : 480px ) {
+@media ( min-width : 320px ) {
 
   header {
     align-items: center;
@@ -21,148 +21,493 @@
   }
 
   .moneyHeader {
+    align-items: center;
     background-color: rgb(218, 211, 211);
     border-radius: 10px;
     box-shadow: 0 2px 10px 2px rgb(57, 57, 57);
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    justify-content: space-around;
+    margin-top: 2px;
     max-height: 50px;
     max-width: 90%;
-    padding: 5px 0;
+    padding: 10px 0;
     width: 90%;
   }
 
   .totalHeader {
     font-size: 16px;
-    margin-right: 5px;
-    margin-top: 8px;
-    max-width: 120px;
+    margin: 0 10px;
+    max-width: 140px;
     text-align: center;
-    width: 120px;
+    width: 70px;
   }
 
   .valorHeader , .totalAtt {
-    color: black;
-    font-size: 18px;
+    color: rgb(6, 6, 6);
+    font-size: 16px;
     font-weight: 900;
     height: 24px;
-    margin-right: 10px;
-    margin-top: 15px;
-    max-width: 250px;
+    margin: 0 5px;
+    margin-top: 5px;
+    max-width: 350px;
     overflow: hidden;
+    text-align: left;
     text-overflow: ellipsis;
     white-space: nowrap;
+    width: 350px;
   }
 
   .brlHeader {
-    font-size: 18px;
-    margin-right: 10px;
-    margin-top: 15px;
+    font-size: 16px;
+    margin: 0 25px 0 5px;
   }
 
-  .profileHeader {
-    display: flex;
-    margin-top: 15px;
-  }
-
-  .IconProfile {
-    font-size: 28px;
-    font-weight: 900;
-    margin: 6px 10px 0 12%;
-    /* visibility: hidden; */
+  .iconProfile {
+    background-color: rgb(67, 135, 135);
+    visibility: hidden;
   }
 
   .emailHeader {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: 900;
-    margin-right: 12%;
-    max-width: 300px;
+    max-width: 250px;
     overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 250px;
+  }
+}
+
+@media ( min-width : 375px ) {
+
+  header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Bebas Neue, cursive;
+    justify-content: space-between;
+    letter-spacing: 2px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .img2Logo {
+    margin: 15px 0;
+    width: 240px;
+  }
+
+  .iconCoin {
+    visibility: hidden;
+  }
+
+  .moneyHeader {
+    align-items: center;
+    background-color: rgb(218, 211, 211);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px 2px rgb(57, 57, 57);
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2px;
+    max-height: 50px;
+    max-width: 90%;
+    padding: 10px 0;
+    width: 90%;
+  }
+
+  .totalHeader {
+    font-size: 16px;
+    margin: 0 10px;
+    max-width: 140px;
+    text-align: center;
+    width: 70px;
+  }
+
+  .valorHeader , .totalAtt {
+    color: rgb(6, 6, 6);
+    font-size: 16px;
+    font-weight: 900;
+    height: 24px;
+    margin: 0 5px;
+    margin-top: 5px;
+    max-width: 350px;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 350px;
+  }
+
+  .brlHeader {
+    font-size: 16px;
+    margin: 0 25px 0 5px;
+  }
+
+  .profileHeader {
+    align-items: center;
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .iconProfile {
+    margin-right: 5px;
+  }
+
+  .emailHeader {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    max-width: 250px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 250px;
+  }
+
+}
+
+@media ( min-width : 425px ) {
+
+  header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Bebas Neue, cursive;
+    justify-content: space-between;
+    letter-spacing: 2px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .img2Logo {
+    margin: 15px 0 25px;
+    width: 260px;
+  }
+
+  .iconCoin {
+    visibility: hidden;
+  }
+
+  .moneyHeader {
+    align-items: center;
+    background-color: rgb(218, 211, 211);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px 2px rgb(57, 57, 57);
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2px;
+    max-height: 50px;
+    max-width: 90%;
+    padding: 10px 0;
+    width: 90%;
+  }
+
+  .totalHeader {
+    font-size: 20px;
+    margin: 0 10px;
+    max-width: 140px;
+    text-align: center;
+    width: 120px;
+  }
+
+  .valorHeader , .totalAtt {
+    color: rgb(6, 6, 6);
+    font-size: 18px;
+    font-weight: 900;
+    height: 24px;
+    margin: 0 5px;
+    margin-top: 5px;
+    max-width: 350px;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 350px;
+  }
+
+  .brlHeader {
+    font-size: 18px;
+    margin: 0 25px 0 5px;
+  }
+
+  .profileHeader {
+    align-items: center;
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .iconProfile {
+    font-size: 28px;
+    margin-right: 5px;
+  }
+
+  .emailHeader {
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    margin-right: 20px;
+    max-width: 450px;
+    overflow: hidden;
+    text-align: center;
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 300px;
   }
+
 }
 
-/* header {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  font-family: Bebas Neue, cursive;
-  justify-content: space-between;
-  letter-spacing: 2px;
-  margin: auto;
-  text-align: center;
+@media ( min-width : 768px ) {
+
+  header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Bebas Neue, cursive;
+    justify-content: space-around;
+    letter-spacing: 2px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .img2Logo {
+    margin: 15px 0 20px;
+    width: 300px;
+  }
+
+  .iconCoin {
+    visibility: hidden;
+  }
+
+  .moneyHeader {
+    align-items: center;
+    background-color: rgb(218, 211, 211);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px 2px rgb(57, 57, 57);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    max-height: 50px;
+    max-width: 90%;
+    padding: 15px 0;
+    width: 90%;
+  }
+
+  .totalHeader {
+    font-size: 18px;
+    margin: 0 10px;
+    max-width: 140px;
+    text-align: center;
+    width: 140px;
+  }
+
+  .valorHeader , .totalAtt {
+    color: rgb(6, 6, 6);
+    font-size: 20px;
+    font-weight: 900;
+    height: 24px;
+    margin: 0 5px;
+    max-width: 350px;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .brlHeader {
+    font-size: 18px;
+    margin: 0 25px 0 5px;
+  }
+
+  .profileHeader {
+    align-items: center;
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .iconProfile {
+    font-size: 32px;
+    margin: -4px 10px 0 80px;
+  }
+
+  .emailHeader {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    max-width: 450px;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 420px;
+  }
 }
 
-.moneyHeader {
-  background-color: rgb(218, 211, 211);
-  border-radius: 10px;
-  box-shadow: 0 2px 10px 2px rgb(57, 57, 57);
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  max-height: 50px;
-  padding: 10px;
+@media ( min-width : 1024px ) {
+
+  header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Bebas Neue, cursive;
+    justify-content: space-around;
+    letter-spacing: 2px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .img2Logo {
+    margin: 15px 0 20px;
+    width: 300px;
+  }
+
+  .iconCoin {
+    visibility: hidden;
+  }
+
+  .moneyHeader {
+    align-items: center;
+    background-color: rgb(218, 211, 211);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px 2px rgb(57, 57, 57);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    max-height: 50px;
+    max-width: 90%;
+    padding: 20px 0;
+    width: 70%;
+  }
+
+  .totalHeader {
+    font-size: 20px;
+    margin: 0 10px;
+    max-width: 140px;
+    text-align: center;
+    width: 140px;
+  }
+
+  .valorHeader , .totalAtt {
+    color: rgb(6, 6, 6);
+    font-size: 22px;
+    font-weight: 900;
+    height: 24px;
+    margin: 0 5px;
+    max-width: 350px;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .brlHeader {
+    font-size: 20px;
+    margin: 0 25px 0 5px;
+  }
+
+  .profileHeader {
+    align-items: center;
+    display: flex;
+    margin-top: 10px;
+  }
+
+  /* .iconProfile {
+    font-size: 32px;
+    margin: -4px 10px 0 80px;
+  } */
+
+  .emailHeader {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    max-width: 430px;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 430px;
+  }
 }
 
-.profileHeader {
-  display: flex;
-  margin-top: 30px;
-}
+@media ( min-width : 1440px ) {
 
-.IconProfile {
-  font-size: 32px;
-  font-weight: 900;
-  margin: 8px 10px 0 0;
-}
+  header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Bebas Neue, cursive;
+    justify-content: space-around;
+    letter-spacing: 2px;
+    margin: auto;
+    text-align: center;
+  }
 
-.emailHeader {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: 900;
-  margin-right: 30px;
-  max-width: 300px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 300px;
-}
+  .img2Logo {
+    margin: 15px 0 20px;
+    width: 350px;
+  }
 
-.img2Logo {
-  margin-left: 30px;
-  margin-top: 30px;
-  width: 300px;
-}
+  .iconCoin {
+    visibility: hidden;
+  }
 
-.totalHeader {
-  font-size: 18px;
-  font-weight: 700;
-  margin-right: 10px;
-  margin-top: 17px;
-}
+  .moneyHeader {
+    align-items: center;
+    background-color: rgb(218, 211, 211);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px 2px rgb(57, 57, 57);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    max-height: 50px;
+    max-width: 90%;
+    padding: 20px 0;
+    width: 60%;
+  }
 
-.valorHeader , .totalAtt {
-  font-size: 20px;
-  height: 24px;
-  margin-right: 10px;
-  margin-top: 15px;
-  max-width: 145px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
+  .totalHeader {
+    font-size: 20px;
+    margin: 0 10px;
+    max-width: 140px;
+    text-align: center;
+    width: 140px;
+  }
 
-.brlHeader {
-  font-size: 20px;
-  margin-right: 10px;
-  margin-top: 15px;
-}
+  .valorHeader , .totalAtt {
+    color: rgb(6, 6, 6);
+    font-size: 22px;
+    font-weight: 900;
+    height: 24px;
+    margin: 0 5px;
+    max-width: 350px;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 
-.iconCoin {
-  font-size: 30px;
-  margin: 0 15px 0 20px;
-  margin-top: 15px;
-} */
+  .brlHeader {
+    font-size: 20px;
+    margin: 0 25px 0 5px;
+  }
+
+  .profileHeader {
+    align-items: center;
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .emailHeader {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    max-width: 430px;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 430px;
+  }
+}

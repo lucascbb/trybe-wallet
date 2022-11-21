@@ -24,7 +24,7 @@ class Wallet extends React.Component {
           <Header />
           <WallerForm />
         </section>
-        {/* <Table /> */}
+        <Table />
       </div>
     );
   }

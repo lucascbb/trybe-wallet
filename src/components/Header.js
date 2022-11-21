@@ -27,7 +27,7 @@ class Header extends Component {
         <img src={ logo } alt={ ' ' } className="img2Logo" />
         <div className="moneyHeader">
           <BsCashCoin className="iconCoin" />
-          <p className="totalHeader">Despesa total:</p>
+          <p className="totalHeader">Despesa total</p>
           { expenses.length > 0 ? this.soma()
             : (
               <p
@@ -40,7 +40,7 @@ class Header extends Component {
           <p className="brlHeader">BRL</p>
         </div>
         <div className="profileHeader">
-          <CgProfile className="IconProfile" />
+          <CgProfile className="iconProfile" />
           <p
             data-testid="email-field"
             className="emailHeader"

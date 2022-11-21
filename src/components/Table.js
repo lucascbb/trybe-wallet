@@ -38,26 +38,22 @@ class Table extends Component {
               {tab.method}
             </td>
             <td className="value2">
-              {/* {(Number(tab.value)).toLocaleString('de-DE', { maximumFractionDigits: 2 })} */}
-              {(Number(tab.value)).toFixed(2)}
+              {(Number(tab.value)).toLocaleString('de-DE', { maximumFractionDigits: 2 })}
             </td>
             <td className="moeda2">
-              {/* {tab.exchangeRates[tab.currency].name.replace('/Real Brasileiro', '')} */}
-              {tab.exchangeRates[tab.currency].name}
+              {tab.exchangeRates[tab.currency].name.replace('/Real Brasileiro', '')}
             </td>
             <td className="cambio2">
-              {/* {(Number(tab.exchangeRates[tab.currency].ask))
-                .toLocaleString('de-DE', { maximumFractionDigits: 2 })} */}
-              {(Number(tab.exchangeRates[tab.currency].ask)).toFixed(2)}
+              {(Number(tab.exchangeRates[tab.currency].ask))
+                .toLocaleString('de-DE', { maximumFractionDigits: 2 })}
             </td>
             <td className="valueConv2">
-              {/* {(tab.exchangeRates[tab.currency].ask * tab.value)
-                .toLocaleString('de-DE', { maximumFractionDigits: 2 })} */}
-              {(tab.exchangeRates[tab.currency].ask * tab.value).toFixed(2)}
+              {(tab.exchangeRates[tab.currency].ask * tab.value)
+                .toLocaleString('de-DE', { maximumFractionDigits: 2 })}
             </td>
-            <td className="moedaConv2">
+            {/* <td className="moedaConv2">
               Real
-            </td>
+            </td> */}
             <td className="editDel2">
               <button
                 id={ tab.id }
@@ -86,19 +82,19 @@ class Table extends Component {
   render() {
     const { expenses } = this.props;
     return (
-      <div className="tablePai">
-        <table>
+      <div className="tableDivPai">
+        <table className="tablePai">
           <thead>
-            <tr>
+            <tr className="trPai">
               <th className="desc">Descrição</th>
               <th className="tag">Tag</th>
-              <th className="method">Método de pagamento</th>
+              <th className="method">Método pagamento</th>
               <th className="value">Valor</th>
-              <th className="moeda">Moeda</th>
-              <th className="cambio">Câmbio utilizado</th>
-              <th className="valueConv">Valor convertido</th>
-              <th className="moedaConv">Moeda de conversão</th>
-              <th className="editDel">Editar/Excluir</th>
+              <th className="moeda">Moeda usada</th>
+              <th className="cambio">Valor do câmbio</th>
+              <th className="valueConv">Valor em reais</th>
+              {/* <th className="moedaConv">Moeda de conversão</th> */}
+              <th className="editDel">Editar/ Excluir</th>
             </tr>
           </thead>
           <tbody>

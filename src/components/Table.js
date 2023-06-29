@@ -26,35 +26,32 @@ class Table extends Component {
     const { expenses } = this.props;
     if (expenses.length > 0) {
       return (
-        [...expenses].map((tab) => (
+        [...expenses].map((tab, index) => (
           <tr name={ tab.value } key={ tab.value } className="paiResultTable">
-            <td className="desc2">
+            <td className="desc2" data-label="Descrição">
               {tab.description}
             </td>
-            <td className="tag2">
-              {tab.tag}
-            </td>
-            <td className="method2">
-              {tab.method}
-            </td>
-            <td className="value2">
+            <td className="value2" data-label="Valor gasto">
               {(Number(tab.value)).toLocaleString('de-DE', { maximumFractionDigits: 2 })}
             </td>
-            <td className="moeda2">
+            <td className="tag2" data-label="Categoria">
+              {tab.tag}
+            </td>
+            <td className="method2" data-label="Método de pagamento">
+              {tab.method}
+            </td>
+            <td className="moeda2" data-label="Moeda Usada">
               {tab.exchangeRates[tab.currency].name.replace('/Real Brasileiro', '')}
             </td>
-            <td className="cambio2">
+            <td className="cambio2" data-label="Cambio da moeda">
               {(Number(tab.exchangeRates[tab.currency].ask))
                 .toLocaleString('de-DE', { maximumFractionDigits: 2 })}
             </td>
-            <td className="valueConv2">
+            <td className="valueConv2" data-label="Valor em reais">
               {(tab.exchangeRates[tab.currency].ask * tab.value)
                 .toLocaleString('de-DE', { maximumFractionDigits: 2 })}
             </td>
-            {/* <td className="moedaConv2">
-              Real
-            </td> */}
-            <td className="editDel2">
+            <td className="editDel2" data-label={ index + 1 }>
               <button
                 id={ tab.id }
                 type="button"
@@ -83,22 +80,19 @@ class Table extends Component {
     const { expenses } = this.props;
     return (
       <div className="tableDivPai">
-        <table className="tablePai">
+        <table className="table">
           <thead>
-            <tr className="trPai">
-              <th className="desc">Descrição</th>
-              <th className="tag">Tag</th>
-              <th className="method">Método pagamento</th>
-              <th className="value">Valor</th>
-              <th className="moeda">Moeda usada</th>
-              <th className="cambio">Valor do câmbio</th>
-              <th className="valueConv">Valor em reais</th>
-              {/* <th className="moedaConv">Moeda de conversão</th> */}
-              <th className="editDel">Editar/ Excluir</th>
-            </tr>
+            <th className="desc">Descrição</th>
+            <th className="tag">Tag</th>
+            <th className="method">Método pagamento</th>
+            <th className="value">Valor</th>
+            <th className="moeda">Moeda usada</th>
+            <th className="cambio">Valor do câmbio</th>
+            <th className="valueConv">Valor em reais</th>
+            <th className="editDel">Editar/ Excluir</th>
           </thead>
           <tbody>
-            { expenses.length > 0 ? (this.funcTable()) : null}
+            { expenses.length > 0 ? (this.funcTable()) : null }
           </tbody>
         </table>
       </div>

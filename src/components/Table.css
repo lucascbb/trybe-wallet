@@ -1,264 +1,333 @@
 @media ( min-width : 320px ) {
 
   .tableDivPai {
-    background-color: brown;
-  }
-
-  .tablePai {
-    background-color: rgb(25, 186, 186);
+    align-items: center;
     display: flex;
     flex-direction: column;
-    font-size: 8px;
-    margin: auto;
-    padding: 5px 0;
+    justify-content: center;
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  body {
+    margin: 0;
+    padding: 20px;
+    font-family: sans-serif;
+  }
+
+  *{
+    box-sizing: border-box;
+  }
+
+  table {
     position: absolute;
-    top: 620px;
+    top: 640px;
+    border-collapse: collapse;
+  }
+
+  table td, table th {
+    padding: 12px 15px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  table th {
+    background-color: #0f18cb;
+    color: white;
+  }
+
+  table tbody tr:nth-child(even)  {
+    background-color: #5dce9f;
+  }
+
+  table tbody tr:nth-child(odd)  {
+    background-color: rgb(245, 245, 245);
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table, table tbody, table tr, table td {
+    display: block;
     width: 100%;
   }
 
-  .editDel2 {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .btnEditTable , .btnDelTable {
-    font-size: 6px;
-  }
-
-  .paiResultTable {
-    width: 100%;
-  }
-
-  .desc , .tag , .value {
-    background-color: black;
-    border-radius: 5px;
-    color: white;
-    max-width: 40px;
-    text-align: center;
-    width: 40px;
-  }
-
-  .method {
-    background-color: black;
-    border-radius: 5px;
-    color: white;
-    font-size: 6px;
-    max-width: 40px;
-    text-align: center;
-    width: 40px;
-  }
-
-  .moeda , .cambio , .valueConv , .editDel {
-    background-color: black;
-    border-radius: 5px;
-    color: white;
-    max-width: 40px;
-    text-align: center;
-    width: 40px;
-  }
-
-  .desc2 , .tag2 , .method2 , .value2 {
-    border-bottom: 1px solid black;
-    font-size: 5px;
-    max-width: 40px;
+  table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
     overflow: hidden;
-    text-align: center;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 40px;
   }
 
-  .moeda2 , .cambio2 , .valueConv2 , .editDel2 {
-    border-bottom: 1px solid black;
-    font-size: 5px;
-    max-width: 40px;
-    overflow: hidden;
+  table td::before{
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  table td:last-child {
+    padding: 10px;
+    margin: 0 auto;
     text-align: center;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 40px;
+  }
+
+  table {
+    padding: 10px 0;
+  }
+
+  .editDel2 button {
+    all: unset;
+    padding: 6px 8px;
+    width: 100px;
+    border: 1px solid black;
+    cursor: pointer;
+    color: white;
+    border-radius: 6px;
+  }
+
+  .editDel2 button:nth-child(1){
+    background-color: #264cc7;
+    box-shadow: 2px 2px 2px rgb(63, 63, 63);
+    font-weight: bold;
+    margin: 5px;
+  }
+
+  .editDel2 button:nth-child(2){
+    background-color: #c73126;
+    box-shadow: 2px 2px 2px rgb(63, 63, 63);
+    font-weight: bold;
+    margin: 5px;
   }
 }
 
 @media ( min-width : 375px ) {
 
   .tableDivPai {
-    background-color: brown;
-  }
-
-  .tablePai {
-    background-color: rgb(25, 186, 186);
+    align-items: center;
     display: flex;
     flex-direction: column;
-    font-size: 8px;
-    margin: auto;
-    padding: 5px 0;
+    justify-content: center;
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  body {
+    margin: 0;
+    padding: 20px;
+    font-family: sans-serif;
+  }
+
+  *{
+    box-sizing: border-box;
+  }
+
+  table {
     position: absolute;
-    top: 650px;
+    top: 640px;
+    border-collapse: collapse;
+  }
+
+  table td, table th {
+    padding: 12px 15px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  table th {
+    background-color: #0f18cb;
+    color: white;
+  }
+
+  table tbody tr:nth-child(even)  {
+    background-color: #5dce9f;
+  }
+
+  table tbody tr:nth-child(odd)  {
+    background-color: rgb(245, 245, 245);
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table, table tbody, table tr, table td {
+    display: block;
     width: 100%;
   }
 
-  .editDel2 {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .btnEditTable , .btnDelTable {
-    font-size: 6px;
-  }
-
-  .paiResultTable {
-    width: 100%;
-  }
-
-  .desc , .tag , .value {
-    border: 1px solid black;
-    border-radius: 5px;
-    max-width: 43px;
-    text-align: center;
-    width: 43px;
-  }
-
-  .method {
-    border: 1px solid black;
-    border-radius: 5px;
-    font-size: 6px;
-    max-width: 43px;
-    text-align: center;
-    width: 43px;
-  }
-
-  .moeda , .cambio , .valueConv , .editDel {
-    border: 1px solid black;
-    border-radius: 5px;
-    max-width: 43px;
-    text-align: center;
-    width: 43px;
-  }
-
-  .desc2 , .tag2 , .method2 , .value2 {
-    border-bottom: 1px solid black;
-    font-size: 5px;
-    max-width: 43px;
+  table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
     overflow: hidden;
-    text-align: center;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 43px;
   }
 
-  .moeda2 , .cambio2 , .valueConv2 , .editDel2 {
-    border-bottom: 1px solid black;
-    font-size: 5px;
-    max-width: 43px;
-    overflow: hidden;
+  table td::before{
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  table td:last-child {
+    padding: 10px;
+    margin: 0 auto;
     text-align: center;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 43px;
+  }
+
+  table {
+    padding: 20px 0;
+  }
+
+  .editDel2 button {
+    all: unset;
+    padding: 6px 8px;
+    width: 100px;
+    border: 1px solid black;
+    cursor: pointer;
+    color: white;
+    border-radius: 6px;
+  }
+
+  .editDel2 button:nth-child(1){
+    background-color: #264cc7;
+    box-shadow: 2px 2px 2px rgb(63, 63, 63);
+    font-weight: bold;
+    margin: 5px;
+  }
+
+  .editDel2 button:nth-child(2){
+    background-color: #c73126;
+    box-shadow: 2px 2px 2px rgb(63, 63, 63);
+    font-weight: bold;
+    margin: 5px;
   }
 }
 
 @media ( min-width : 425px ) {
 
   .tableDivPai {
-    background-color: brown;
-  }
-
-  .tablePai {
-    background-color: rgb(25, 186, 186);
+    align-items: center;
     display: flex;
     flex-direction: column;
-    font-size: 10px;
-    margin: auto;
-    padding: 5px 0;
+    justify-content: center;
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  body {
+    margin: 0;
+    padding: 20px;
+    font-family: sans-serif;
+  }
+
+  *{
+    box-sizing: border-box;
+  }
+
+  table {
     position: absolute;
-    top: 700px;
+    top: 640px;
+    border-collapse: collapse;
+  }
+
+  table td, table th {
+    padding: 12px 15px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  table th {
+    background-color: #0f18cb;
+    color: white;
+  }
+
+  table tbody tr:nth-child(even)  {
+    background-color: #5dce9f;
+  }
+
+  table tbody tr:nth-child(odd)  {
+    background-color: rgb(245, 245, 245);
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table, table tbody, table tr, table td {
+    display: block;
     width: 100%;
   }
 
-  .editDel2 {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .btnEditTable {
-    background: #0f18cb;
-    border: 0 solid white;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px black;
-    color: white;
-    cursor: pointer;
-    font: Tahoma, Geneva, sans-serif;
-    font-size: 7px;
-    font-weight: 900;
-    margin-bottom: 5px;
-    padding: 2px;
-  }
-
-  .btnDelTable {
-    background: #cb0f21;
-    border: 0 solid white;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px black;
-    color: white;
-    cursor: pointer;
-    font: Tahoma, Geneva, sans-serif;
-    font-size: 7px;
-    font-weight: 900;
-    margin-bottom: 5px;
-    padding: 2px;
-  }
-
-  .paiResultTable {
-    width: 100%;
-  }
-
-  .desc , .tag , .value {
-    border: 1px solid black;
-    border-radius: 6px;
-    max-width: 50px;
-    text-align: center;
-    width: 50px;
-  }
-
-  .method {
-    border: 1px solid black;
-    border-radius: 5px;
-    font-size: 6px;
-    max-width: 50px;
-    text-align: center;
-    width: 50px;
-  }
-
-  .moeda , .cambio , .valueConv , .editDel {
-    border: 1px solid black;
-    border-radius: 6px;
-    max-width: 50px;
-    text-align: center;
-    width: 50px;
-  }
-
-  .desc2 , .tag2 , .method2 , .value2 {
-    border-bottom: 1px solid black;
-    font-size: 6px;
-    max-width: 50px;
+  table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
     overflow: hidden;
-    text-align: center;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 50px;
   }
 
-  .moeda2 , .cambio2 , .valueConv2 , .editDel2 {
-    border-bottom: 1px solid black;
-    font-size: 6px;
-    max-width: 50px;
-    overflow: hidden;
+  table td::before{
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  table td:last-child {
+    padding: 10px;
+    margin: 0 auto;
     text-align: center;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 50px;
+  }
+
+  table {
+    padding: 10px 0;
+  }
+
+  .editDel2 button {
+    all: unset;
+    padding: 6px 8px;
+    width: 100px;
+    border: 1px solid black;
+    cursor: pointer;
+    color: white;
+    border-radius: 6px;
+  }
+
+  .editDel2 button:nth-child(1){
+    background-color: #264cc7;
+    box-shadow: 2px 2px 2px rgb(63, 63, 63);
+    font-weight: bold;
+    margin: 5px;
+  }
+
+  .editDel2 button:nth-child(2){
+    background-color: #c73126;
+    box-shadow: 2px 2px 2px rgb(63, 63, 63);
+    font-weight: bold;
+    margin: 5px;
   }
 }
 

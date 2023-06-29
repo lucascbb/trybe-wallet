@@ -17,7 +17,7 @@
   }
 
   .iconCoin {
-    visibility: hidden;
+    display: none;
   }
 
   .moneyHeader {
@@ -59,22 +59,33 @@
 
   .brlHeader {
     font-size: 16px;
+    font-weight: 900;
     margin: 0 25px 0 5px;
   }
 
+  .profileHeader {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 8px 0 0;
+  }
+
   .iconProfile {
-    background-color: rgb(67, 135, 135);
-    visibility: hidden;
+    font-size: 18px;
+    margin: 0 0 0 25px;
+    color: white;
   }
 
   .emailHeader {
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: 900;
     max-width: 250px;
     overflow: hidden;
-    text-align: center;
+    text-align: left;
     text-overflow: ellipsis;
+    padding: 0 10px;
     white-space: nowrap;
     width: 250px;
   }
@@ -94,8 +105,8 @@
   }
 
   .img2Logo {
-    margin: 15px 0;
-    width: 240px;
+    margin: 20px 0 30px;
+    width: 220px;
   }
 
   .iconCoin {
@@ -118,7 +129,7 @@
 
   .totalHeader {
     font-size: 16px;
-    margin: 0 10px;
+    margin: 0 10px 0 20px;
     max-width: 140px;
     text-align: center;
     width: 70px;
@@ -126,11 +137,11 @@
 
   .valorHeader , .totalAtt {
     color: rgb(6, 6, 6);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 900;
     height: 24px;
     margin: 0 5px;
-    margin-top: 5px;
+    margin-top: 2px;
     max-width: 350px;
     overflow: hidden;
     text-align: left;
@@ -141,31 +152,37 @@
 
   .brlHeader {
     font-size: 16px;
+    font-weight: 900;
     margin: 0 25px 0 5px;
   }
 
   .profileHeader {
     align-items: center;
     display: flex;
-    margin-top: 10px;
+    justify-content: left;
+    margin: 8px 0 0;
+    width: 85%;
   }
 
   .iconProfile {
-    margin-right: 5px;
+    font-size: 18px;
+    margin: 0;
+    color: white;
   }
 
   .emailHeader {
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 900;
     max-width: 250px;
     overflow: hidden;
-    text-align: center;
+    text-align: left;
     text-overflow: ellipsis;
+    padding: 0 10px;
     white-space: nowrap;
     width: 250px;
   }
-
 }
 
 @media ( min-width : 425px ) {
@@ -205,7 +222,7 @@
   }
 
   .totalHeader {
-    font-size: 20px;
+    font-size: 18px;
     margin: 0 10px;
     max-width: 140px;
     text-align: center;
@@ -214,11 +231,10 @@
 
   .valorHeader , .totalAtt {
     color: rgb(6, 6, 6);
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 900;
     height: 24px;
     margin: 0 5px;
-    margin-top: 5px;
     max-width: 350px;
     overflow: hidden;
     text-align: left;
@@ -229,32 +245,36 @@
 
   .brlHeader {
     font-size: 18px;
+    font-weight: 900;
     margin: 0 25px 0 5px;
   }
 
   .profileHeader {
     align-items: center;
     display: flex;
-    margin-top: 10px;
+    justify-content: left;
+    margin: 8px 0 0;
+    width: 85%;
   }
 
   .iconProfile {
-    font-size: 28px;
-    margin-right: 5px;
+    font-size: 18px;
+    margin: 0;
+    color: white;
   }
 
   .emailHeader {
-    color: whitesmoke;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 900;
-    margin-right: 20px;
-    max-width: 450px;
+    max-width: 250px;
     overflow: hidden;
-    text-align: center;
+    text-align: left;
     text-overflow: ellipsis;
+    padding: 0 10px;
     white-space: nowrap;
-    width: 300px;
+    width: 250px;
   }
 
 }
@@ -266,15 +286,15 @@
     display: flex;
     flex-direction: column;
     font-family: Bebas Neue, cursive;
-    justify-content: space-around;
+    justify-content: space-between;
     letter-spacing: 2px;
     margin: auto;
     text-align: center;
   }
 
   .img2Logo {
-    margin: 15px 0 20px;
-    width: 300px;
+    margin: 15px 0 25px;
+    width: 260px;
   }
 
   .iconCoin {
@@ -287,12 +307,12 @@
     border-radius: 10px;
     box-shadow: 0 2px 10px 2px rgb(57, 57, 57);
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    justify-content: space-around;
+    margin-top: 2px;
     max-height: 50px;
     max-width: 90%;
-    padding: 15px 0;
-    width: 90%;
+    padding: 10px 0;
+    width: 85%;
   }
 
   .totalHeader {
@@ -300,7 +320,7 @@
     margin: 0 10px;
     max-width: 140px;
     text-align: center;
-    width: 140px;
+    width: 120px;
   }
 
   .valorHeader , .totalAtt {
@@ -314,34 +334,41 @@
     text-align: left;
     text-overflow: ellipsis;
     white-space: nowrap;
+    width: 350px;
   }
 
   .brlHeader {
     font-size: 18px;
+    font-weight: 900;
     margin: 0 25px 0 5px;
   }
 
   .profileHeader {
     align-items: center;
     display: flex;
-    margin-top: 10px;
+    justify-content: left;
+    margin: 8px 0 0;
+    width: 80%;
   }
 
   .iconProfile {
-    font-size: 32px;
-    margin: -4px 10px 0 80px;
+    font-size: 18px;
+    margin: 0;
+    color: white;
   }
 
   .emailHeader {
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 900;
-    max-width: 450px;
+    max-width: 250px;
     overflow: hidden;
     text-align: left;
     text-overflow: ellipsis;
+    padding: 0 10px;
     white-space: nowrap;
-    width: 420px;
+    width: 250px;
   }
 }
 
@@ -352,15 +379,15 @@
     display: flex;
     flex-direction: column;
     font-family: Bebas Neue, cursive;
-    justify-content: space-around;
+    justify-content: space-between;
     letter-spacing: 2px;
     margin: auto;
     text-align: center;
   }
 
   .img2Logo {
-    margin: 15px 0 20px;
-    width: 300px;
+    margin: 15px 0 25px;
+    width: 260px;
   }
 
   .iconCoin {
@@ -373,25 +400,26 @@
     border-radius: 10px;
     box-shadow: 0 2px 10px 2px rgb(57, 57, 57);
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    justify-content: space-around;
+    margin-top: 2px;
+    height: 32px;
     max-height: 50px;
     max-width: 90%;
-    padding: 20px 0;
+    padding: 10px 0;
     width: 70%;
   }
 
   .totalHeader {
-    font-size: 20px;
+    font-size: 18px;
     margin: 0 10px;
     max-width: 140px;
     text-align: center;
-    width: 140px;
+    width: 120px;
   }
 
   .valorHeader , .totalAtt {
     color: rgb(6, 6, 6);
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 900;
     height: 24px;
     margin: 0 5px;
@@ -400,34 +428,41 @@
     text-align: left;
     text-overflow: ellipsis;
     white-space: nowrap;
+    width: 350px;
   }
 
   .brlHeader {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 900;
     margin: 0 25px 0 5px;
   }
 
   .profileHeader {
     align-items: center;
     display: flex;
-    margin-top: 10px;
+    justify-content: left;
+    margin: 8px 0 0;
+    width: 65%;
   }
 
-  /* .iconProfile {
-    font-size: 32px;
-    margin: -4px 10px 0 80px;
-  } */
+  .iconProfile {
+    font-size: 18px;
+    margin: 0;
+    color: white;
+  }
 
   .emailHeader {
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 900;
-    max-width: 430px;
+    max-width: 250px;
     overflow: hidden;
     text-align: left;
     text-overflow: ellipsis;
+    padding: 0 10px;
     white-space: nowrap;
-    width: 430px;
+    width: 250px;
   }
 }
 

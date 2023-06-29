@@ -5,7 +5,7 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 0 2px 20px 10px rgba(0, 0, 0, 0.326);
-    height: 220px;
+    height: 200px;
     margin: auto;
     width: 90%;
   }
@@ -18,7 +18,7 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 0 2px 20px 10px rgba(0, 0, 0, 0.326);
-    height: 200px;
+    height: 220px;
     margin: auto;
     width: 90%;
   }
@@ -45,9 +45,35 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 0 2px 20px 10px rgba(0, 0, 0, 0.326);
-    height: 250px;
+    height: 220px;
     margin: auto;
     width: 90%;
+  }
+}
+
+@media ( min-width : 1024px ) {
+
+  .headerEwalletForm {
+    background-color: rgb(105, 105, 120);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 2px 20px 10px rgba(0, 0, 0, 0.326);
+    height: 220px;
+    margin: auto;
+    width: 80%;
+  }
+}
+
+@media ( min-width : 1300px ) {
+
+  .headerEwalletForm {
+    background-color: rgb(105, 105, 120);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 2px 20px 10px rgba(0, 0, 0, 0.326);
+    height: 220px;
+    margin: auto;
+    width: 70%;
   }
 }
 

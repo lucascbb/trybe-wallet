@@ -19,7 +19,6 @@ class WalletForm extends Component {
     btnEdit: true,
   };
 
-  //-------------------------------------------------
   handleChange2 = ({ target }) => {
     this.setState({ [target.name]: target.value }, () => {
       if (store.getState().wallet.expenses.length === 0) {
@@ -31,7 +30,6 @@ class WalletForm extends Component {
     });
   };
 
-  //-------------------------------------------------
   async handleADD() {
     const { id, value, description, currency, method, tag } = this.state;
     const { dispatch } = this.props;
@@ -123,6 +121,18 @@ class WalletForm extends Component {
               onChange={ this.handleChange2 }
             />
           </label>
+          <label htmlFor="value" className="labelValue">
+            Valor
+            <input
+              type="number"
+              id="value"
+              name="value"
+              value={ value }
+              className="valueInput"
+              data-testid="value-input"
+              onChange={ this.handleChange2 }
+            />
+          </label>
           <label htmlFor="tag" className="labelTag">
             Categoria da despesa
             <select
@@ -139,18 +149,6 @@ class WalletForm extends Component {
               <option value="Transporte" type="submit">Transporte</option>
               <option value="Saúde" type="submit">Saúde</option>
             </select>
-          </label>
-          <label htmlFor="value" className="labelValue">
-            Valor
-            <input
-              type="number"
-              id="value"
-              name="value"
-              value={ value }
-              className="valueInput"
-              data-testid="value-input"
-              onChange={ this.handleChange2 }
-            />
           </label>
           <label htmlFor="method" className="labelMethod">
             Método de pagamento
@@ -202,7 +200,7 @@ class WalletForm extends Component {
                 onClick={ this.handleADD.bind(this) }
               >
                 <MdAddCircle className="iconBtnAdd" />
-                Adicionar despesa
+                <span>Adicionar despesa</span>
               </button>
             )}
           <button
@@ -212,7 +210,7 @@ class WalletForm extends Component {
             onClick={ this.delete }
           >
             <MdDelete className="iconBtnDel" />
-            Deletar todas despesas
+            <span>Deletar despesas</span>
           </button>
         </section>
       </form>

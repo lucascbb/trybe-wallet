@@ -34,6 +34,7 @@ class Login extends React.Component {
   handleSubmit = async () => {
     const { history: { push }, dispatch } = this.props;
     const { email, senha } = this.state;
+    localStorage.setItem('email_wallet', email);
     await push('/carteira');
     dispatch(addEmail(email, senha));
   };

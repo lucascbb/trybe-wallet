@@ -6,7 +6,7 @@
     flex-direction: column;
     font-family: Bebas Neue, cursive;
     letter-spacing: 2px;
-    margin-top: 40px;
+    margin-top: 0px;
     position: relative;
     z-index: -3;
   }
@@ -21,7 +21,7 @@
     justify-content: center;
     margin: auto 0;
     margin-top: -22px;
-    padding: 10px;
+    padding: 40px 10px 20px 10px;
     width: 85%;
   }
 
@@ -32,66 +32,23 @@
     margin: 10px 0;
   }
 
-  .descInput {
+  .labelTag, .labelValue, .labelMethod, .labelCurrency {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+  }
+
+  .descInput, .valueInput {
     border: 1px solid blue;
-    border-radius: 10px;
+    border-radius: 6px;
     height: 25px;
     width: 220px;
   }
 
-  .labelTag {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: 5px 0;
-  }
-
-  .tagInput {
+  .tagInput, .methodInput, .currencyInput {
     border: 1px solid blue;
-    border-radius: 10px;
-    height: 30px;
-    width: 225px;
-  }
-
-  .labelValue {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: 5px 0;
-  }
-
-  .valueInput {
-    background-color: #f8f8f8;
-    border: 1px solid blue;
-    border-radius: 10px;
-    height: 25px;
-    width: 220px;
-  }
-
-  .labelMethod {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: 5px 0;
-  }
-
-  .methodInput {
-    border: 1px solid blue;
-    border-radius: 10px;
-    height: 30px;
-    width: 225px;
-  }
-
-  .labelCurrency {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: 5px 0;
-  }
-
-  .currencyInput {
-    border: 1px solid blue;
-    border-radius: 10px;
+    border-radius: 6px;
     height: 30px;
     width: 225px;
   }
@@ -103,20 +60,24 @@
   }
 
   .btnAddForm {
+    align-items: center;
     background: #12c249;
     border: 0 solid white;
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 2px 2px 5px black;
     color: white;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
     font: Tahoma, Geneva, sans-serif;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 900;
+    justify-content: center;
     height: 70px;
     margin: 5px 0;
     padding: 10px;
     transform: scale(0.85);
-    width: 130px;
+    width: 150px;
   }
 
   .btnAddForm:disabled {
@@ -127,25 +88,29 @@
   }
 
   .iconBtnAdd {
-    margin: 0 20px;
+    margin: 0 20px 10px;
     transform: scale(1.5);
   }
 
   .btnEdiForm {
+    align-items: center;
     background: #1227c2;
     border: 0 solid white;
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 2px 2px 5px black;
     color: white;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
     font: Tahoma, Geneva, sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 900;
+    justify-content: center;
     height: 70px;
     margin: 5px 0;
     padding: 10px;
     transform: scale(0.85);
-    width: 130px;
+    width: 150px;
   }
 
   .btnEditForm:hover {
@@ -163,25 +128,29 @@
   }
 
   .iconBtnEdit {
-    margin: 0 15px;
+    margin: 0 20px 10px;
     transform: scale(1.4);
   }
 
   .btnDelForm {
+    align-items: center;
     background: #cb0f21;
     border: 0 solid white;
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 2px 2px 5px black;
     color: white;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
     font: Tahoma, Geneva, sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 900;
+    justify-content: center;
     height: 70px;
     margin: 5px 0;
     padding: 10px;
     transform: scale(0.85);
-    width: 130px;
+    width: 150px;
   }
 
   .btnDelForm:disabled {
@@ -191,7 +160,7 @@
   }
 
   .iconBtnDel {
-    margin: 0 20px;
+    margin: 0 20px 10px;
     transform: scale(1.5);
   }
 
@@ -232,69 +201,26 @@
     margin: 20px 0 10px;
   }
 
-  .descInput {
+  .descInput, .valueInput {
     border: 1px solid blue;
-    border-radius: 10px;
-    height: 25px;
-    width: 220px;
+    border-radius: 6px;
+    height: 30px;
+    padding: 0 10px 0;
+    width: 210px;
   }
 
-  .labelTag {
+  .labelMethod, .labelCurrency, .labelValue, .labelTag {
     align-items: center;
     display: flex;
     flex-direction: column;
     margin: 5px 0;
   }
 
-  .tagInput {
-    background-color: #f8f8f8;
+  .methodInput, .currencyInput, .tagInput {
     border: 1px solid blue;
-    border-radius: 10px;
+    border-radius: 6px;
     height: 33px;
-    width: 232px;
-  }
-
-  .labelValue {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: 5px 0;
-  }
-
-  .valueInput {
-    background-color: #f8f8f8;
-    border: 1px solid blue;
-    border-radius: 10px;
-    height: 25px;
-    width: 220px;
-  }
-
-  .labelMethod {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: 5px 0;
-  }
-
-  .methodInput {
-    border: 1px solid blue;
-    border-radius: 10px;
-    height: 33px;
-    width: 232px;
-  }
-
-  .labelCurrency {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: 5px 0;
-  }
-
-  .currencyInput {
-    border: 1px solid blue;
-    border-radius: 10px;
-    height: 33px;
-    margin-bottom: 10px;
+    padding: 0 10px 0;
     width: 232px;
   }
 
@@ -305,9 +231,13 @@
   }
 
   .btnAddForm {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background: #12c249;
     border: 0 solid white;
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 2px 2px 5px black;
     color: white;
     cursor: pointer;
@@ -317,7 +247,7 @@
     height: 70px;
     margin: 5px;
     padding: 10px;
-    width: 120px;
+    width: 160px;
   }
 
   .btnAddForm:disabled {
@@ -328,13 +258,17 @@
 
   .iconBtnAdd {
     font-size: 18px;
-    margin: 2px 20px 0;
+    margin: 0 0 5px;
   }
 
   .btnEdiForm {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background: #1227c2;
     border: 0 solid white;
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 2px 2px 5px black;
     color: white;
     cursor: pointer;
@@ -344,7 +278,7 @@
     height: 70px;
     margin: 5px;
     padding: 10px;
-    width: 120px;
+    width: 160px;
   }
 
   .btnEdiForm:disabled {
@@ -355,13 +289,17 @@
 
   .iconBtnEdit {
     font-size: 18px;
-    margin: 2px 30px 0;
+    margin: 0 0 5px;
   }
 
   .btnDelForm {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background: #cb0f21;
     border: 0 solid white;
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 2px 2px 5px black;
     color: white;
     cursor: pointer;
@@ -371,7 +309,7 @@
     height: 70px;
     margin: 5px;
     padding: 10px;
-    width: 120px;
+    width: 160px;
   }
 
   .btnDelForm:disabled {
@@ -382,7 +320,7 @@
 
   .iconBtnDel {
     font-size: 18px;
-    margin: 2px 30px 0;
+    margin: 0 0 5px;
   }
 
 }
@@ -406,8 +344,8 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     display: flex;
-    flex-flow: row wrap;
-    height: 360px;
+    flex-direction: column;
+    height: 390px;
     justify-content: center;
     margin: auto 0;
     margin-top: -82px;
@@ -418,80 +356,28 @@
   .labelDesc {
     align-items: center;
     display: flex;
-    font-size: 14px;
-    margin: 5px 10px;
   }
 
-  .descInput {
+  .descInput, .valueInput {
     border: 1px solid blue;
-    border-radius: 10px;
-    font-size: 16px;
-    height: 25px;
-    margin: 10px;
-    padding: 2px;
-    padding-left: 10px;
+    border-radius: 6px;
+    height: 33px;
+    margin-top: 5px;
     width: 220px;
   }
 
-  .labelTag {
-    align-items: center;
-    display: flex;
-    font-size: 14px;
-    margin: 5px 0;
-  }
-
-  .tagInput {
-    background-color: #f8f8f8;
-    border: 1px solid blue;
-    border-radius: 10px;
-    height: 33px;
-    width: 232px;
-  }
-
-  .labelValue {
-    align-items: center;
-    display: flex;
-    margin: 5px 0;
-  }
-
-  .valueInput {
-    border: 1px solid blue;
-    border-radius: 10px;
-    font-size: 16px;
-    height: 25px;
-    margin: 10px;
-    padding: 2px;
-    padding-left: 10px;
-    width: 220px;
-  }
-
-  .labelMethod {
+  .labelMethod, .labelCurrency, .labelValue, .labelTag{
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: 5px 0;
   }
 
-  .methodInput {
+  .methodInput, .currencyInput, .tagInput{
     border: 1px solid blue;
-    border-radius: 10px;
-    height: 33px;
-    width: 232px;
-  }
-
-  .labelCurrency {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: 5px 0;
-  }
-
-  .currencyInput {
-    border: 1px solid blue;
-    border-radius: 10px;
-    height: 33px;
-    margin-bottom: 10px;
-    width: 232px;
+    border-radius: 6px;
+    height: 36px;
+    margin-top: 5px;
+    width: 242px;
   }
 
   .btnsForm {
@@ -501,19 +387,23 @@
   }
 
   .btnAddForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: #12c249;
     border: 0 solid white;
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 2px 2px 5px black;
     color: white;
     cursor: pointer;
     font: Tahoma, Geneva, sans-serif;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 900;
     height: 70px;
     margin: 5px;
     padding: 10px;
-    width: 160px;
+    width: 180px;
   }
 
   .btnAddForm:disabled {
@@ -528,9 +418,13 @@
   }
 
   .btnEdiForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: #1227c2;
     border: 0 solid white;
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 2px 2px 5px black;
     color: white;
     cursor: pointer;
@@ -540,7 +434,7 @@
     height: 70px;
     margin: 5px;
     padding: 10px;
-    width: 160px;
+    width: 180px;
   }
 
   .btnEdiForm:disabled {
@@ -555,19 +449,23 @@
   }
 
   .btnDelForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: #cb0f21;
     border: 0 solid white;
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 2px 2px 5px black;
     color: white;
     cursor: pointer;
     font: Tahoma, Geneva, sans-serif;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 900;
     height: 70px;
     margin: 5px;
     padding: 10px;
-    width: 160px;
+    width: 180px;
   }
 
   .btnDelForm:disabled {
@@ -601,11 +499,12 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     display: flex;
+    flex-flow: row wrap;
     height: 190px;
     justify-content: space-between;
     margin: auto 0;
     margin-top: -52px;
-    padding-top: 50px;
+    padding: 40px 10px 100px 0;
     width: 90%;
   }
 
@@ -619,9 +518,9 @@
 
   .descInput {
     border: 1px solid blue;
-    border-radius: 10px;
+    border-radius: 6px;
     font-size: 18px;
-    height: 26px;
+    height: 36px;
     margin: 10px;
     padding: 2px;
     padding-left: 10px;
@@ -638,9 +537,9 @@
 
   .valueInput {
     border: 1px solid blue;
-    border-radius: 10px;
+    border-radius: 6px;
     font-size: 18px;
-    height: 28px;
+    height: 36px;
     margin: 10px;
     padding: 2px;
     padding-left: 10px;
@@ -656,11 +555,11 @@
   }
 
   .tagInput {
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     border: 1px solid blue;
-    border-radius: 10px;
+    border-radius: 6px;
     font-size: 18px;
-    height: 33px;
+    height: 40px;
     margin: 10px;
     padding-left: 10px;
     width: 200px;
@@ -675,11 +574,11 @@
   }
 
   .methodInput {
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     border: 1px solid blue;
-    border-radius: 10px;
+    border-radius: 6px;
     font-size: 18px;
-    height: 33px;
+    height: 40px;
     margin: 10px;
     padding-left: 10px;
     width: 190px;
@@ -694,11 +593,11 @@
   }
 
   .currencyInput {
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     border: 1px solid blue;
-    border-radius: 10px;
+    border-radius: 6px;
     font-size: 18px;
-    height: 33px;
+    height: 40px;
     margin: 10px;
     padding-left: 10px;
     width: 100px;
@@ -707,22 +606,29 @@
   .btnsForm {
     align-items: center;
     display: flex;
-    justify-content: center;
-    width: 640px;
+    margin: auto;
+    position: absolute;
+    top: 180px;
   }
 
   .btnAddForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: #12c249;
     border: 0 solid white;
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 2px 2px 5px black;
     color: white;
     cursor: pointer;
     font: Tahoma, Geneva, sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 900;
     height: 70px;
-    width: 350px;
+    margin: 5px;
+    padding: 10px;
+    width: 300px;
   }
 
   .btnAddForm:disabled {
@@ -732,23 +638,28 @@
   }
 
   .iconBtnAdd {
-    font-size: 24px;
-    margin: -5px 15px;
+    font-size: 18px;
+    margin: 2px 40px 5px;
   }
 
   .btnEdiForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: #1227c2;
     border: 0 solid white;
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 2px 2px 5px black;
     color: white;
     cursor: pointer;
     font: Tahoma, Geneva, sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 900;
     height: 70px;
+    margin: 5px;
     padding: 10px;
-    width: 350px;
+    width: 300px;
   }
 
   .btnEdiForm:disabled {
@@ -758,22 +669,28 @@
   }
 
   .iconBtnEdit {
-    font-size: 24px;
-    margin: -5px 15px;
+    font-size: 18px;
+    margin: 2px 65px 5px;
   }
 
   .btnDelForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: #cb0f21;
     border: 0 solid white;
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 2px 2px 5px black;
     color: white;
     cursor: pointer;
     font: Tahoma, Geneva, sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 900;
     height: 70px;
-    width: 360px;
+    margin: 5px;
+    padding: 10px;
+    width: 300px;
   }
 
   .btnDelForm:disabled {
@@ -783,8 +700,8 @@
   }
 
   .iconBtnDel {
-    font-size: 24px;
-    margin: -5px 15px;
+    font-size: 18px;
+    margin: 2px 50px 5px;
   }
 }
 
@@ -807,66 +724,67 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     display: flex;
+    flex-wrap: wrap;
     height: 190px;
     justify-content: space-between;
     margin: auto 0;
-    margin-top: -92px;
-    padding: 80px 30px 15px;
-    width: 85%;
+    margin-top: -52px;
+    padding: 40px 30px 100px 30px;
+    width: 90%;
   }
 
   .labelDesc {
     align-items: center;
     display: flex;
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 2px;
     margin: 5px 10px;
   }
 
   .descInput {
     border: 1px solid blue;
-    border-radius: 10px;
+    border-radius: 6px;
     font-size: 18px;
-    height: 26px;
+    height: 36px;
     margin: 10px;
     padding: 2px;
     padding-left: 10px;
-    width: 340px;
+    width: 300px;
   }
 
   .labelValue {
     align-items: center;
     display: flex;
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 2px;
     margin: 5px 10px;
   }
 
   .valueInput {
     border: 1px solid blue;
-    border-radius: 10px;
+    border-radius: 6px;
     font-size: 18px;
-    height: 28px;
+    height: 36px;
     margin: 10px;
     padding: 2px;
     padding-left: 10px;
-    width: 220px;
+    width: 250px;
   }
 
   .labelTag {
     align-items: center;
     display: flex;
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 2px;
     margin: 5px 10px;
   }
 
   .tagInput {
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     border: 1px solid blue;
-    border-radius: 10px;
+    border-radius: 6px;
     font-size: 18px;
-    height: 33px;
+    height: 40px;
     margin: 10px;
     padding-left: 10px;
     width: 250px;
@@ -875,60 +793,67 @@
   .labelMethod {
     align-items: center;
     display: flex;
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 2px;
     margin: 5px 10px;
   }
 
   .methodInput {
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     border: 1px solid blue;
-    border-radius: 10px;
+    border-radius: 6px;
     font-size: 18px;
-    height: 33px;
+    height: 40px;
     margin: 10px;
     padding-left: 10px;
-    width: 220px;
+    width: 250px;
   }
 
   .labelCurrency {
     align-items: center;
     display: flex;
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 2px;
     margin: 5px 10px;
   }
 
   .currencyInput {
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     border: 1px solid blue;
-    border-radius: 10px;
+    border-radius: 6px;
     font-size: 18px;
-    height: 33px;
+    height: 40px;
     margin: 10px;
     padding-left: 10px;
-    width: 150px;
+    width: 100px;
   }
 
   .btnsForm {
     align-items: center;
     display: flex;
-    justify-content: center;
-    width: 640px;
+    margin: auto;
+    position: absolute;
+    top: 180px;
   }
 
   .btnAddForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: #12c249;
     border: 0 solid white;
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 2px 2px 5px black;
     color: white;
     cursor: pointer;
     font: Tahoma, Geneva, sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 900;
     height: 70px;
-    width: 450px;
+    margin: 5px;
+    padding: 10px;
+    width: 300px;
   }
 
   .btnAddForm:disabled {
@@ -938,23 +863,28 @@
   }
 
   .iconBtnAdd {
-    font-size: 24px;
-    margin: -5px 15px;
+    font-size: 18px;
+    margin: 2px 40px 5px;
   }
 
   .btnEdiForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: #1227c2;
     border: 0 solid white;
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 2px 2px 5px black;
     color: white;
     cursor: pointer;
     font: Tahoma, Geneva, sans-serif;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 900;
     height: 70px;
+    margin: 5px;
     padding: 10px;
-    width: 450px;
+    width: 300px;
   }
 
   .btnEdiForm:disabled {
@@ -964,22 +894,28 @@
   }
 
   .iconBtnEdit {
-    font-size: 24px;
-    margin: -5px 15px;
+    font-size: 18px;
+    margin: 2px 65px 5px;
   }
 
   .btnDelForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: #cb0f21;
     border: 0 solid white;
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 2px 2px 5px black;
     color: white;
     cursor: pointer;
     font: Tahoma, Geneva, sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 900;
     height: 70px;
-    width: 450px;
+    margin: 5px;
+    padding: 10px;
+    width: 300px;
   }
 
   .btnDelForm:disabled {
@@ -989,12 +925,12 @@
   }
 
   .iconBtnDel {
-    font-size: 24px;
-    margin: -5px 15px;
+    font-size: 18px;
+    margin: 2px 50px 5px;
   }
 }
 
-@media ( min-width : 1440px ) {
+@media ( min-width : 1500px ) {
 
   .formPai {
     align-items: center;
@@ -1013,12 +949,12 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     display: flex;
-    height: 190px;
+    height: 100px;
     justify-content: space-between;
     margin: auto 0;
     margin-top: -92px;
-    padding: 80px 30px 15px;
-    width: 85%;
+    padding: 80px 30px 105px 30px;
+    width: 90%;
   }
 
   .labelDesc {
@@ -1031,13 +967,13 @@
 
   .descInput {
     border: 1px solid blue;
-    border-radius: 10px;
+    border-radius: 6px;
     font-size: 20px;
     height: 26px;
     margin: 10px;
     padding: 5px;
     padding-left: 10px;
-    width: 380px;
+    width: 250px;
   }
 
   .labelValue {
@@ -1050,13 +986,13 @@
 
   .valueInput {
     border: 1px solid blue;
-    border-radius: 10px;
+    border-radius: 6px;
     font-size: 20px;
     height: 28px;
     margin: 10px;
     padding: 5px;
     padding-left: 10px;
-    width: 300px;
+    width: 180px;
   }
 
   .labelTag {
@@ -1070,13 +1006,13 @@
   .tagInput {
     background-color: #f8f8f8;
     border: 1px solid blue;
-    border-radius: 10px;
+    border-radius: 6px;
     font-size: 20px;
     height: 40px;
     margin: 10px;
     padding: 5px;
     padding-left: 10px;
-    width: 350px;
+    width: 180px;
   }
 
   .labelMethod {
@@ -1090,13 +1026,13 @@
   .methodInput {
     background-color: #f8f8f8;
     border: 1px solid blue;
-    border-radius: 10px;
+    border-radius: 6px;
     font-size: 20px;
     height: 40px;
     margin: 10px;
     padding: 5px;
     padding-left: 10px;
-    width: 300px;
+    width: 200px;
   }
 
   .labelCurrency {
@@ -1110,13 +1046,13 @@
   .currencyInput {
     background-color: #f8f8f8;
     border: 1px solid blue;
-    border-radius: 10px;
+    border-radius: 6px;
     font-size: 20px;
     height: 40px;
     margin: 10px;
     padding: 5px;
     padding-left: 10px;
-    width: 250px;
+    width: 100px;
   }
 
   .btnsForm {
@@ -1124,12 +1060,18 @@
     display: flex;
     justify-content: center;
     width: 640px;
+    position: absolute;
+    top: 95px;
   }
 
   .btnAddForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background: #12c249;
     border: 0 solid white;
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 2px 2px 5px black;
     color: white;
     cursor: pointer;
@@ -1137,7 +1079,7 @@
     font-size: 18px;
     font-weight: 900;
     height: 70px;
-    width: 600px;
+    width: 800px;
   }
 
   .btnAddForm:disabled {
@@ -1148,13 +1090,17 @@
 
   .iconBtnAdd {
     font-size: 24px;
-    margin: -5px 15px;
+    margin: 0 0 5px;
   }
 
   .btnEdiForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background: #1227c2;
     border: 0 solid white;
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 2px 2px 5px black;
     color: white;
     cursor: pointer;
@@ -1163,7 +1109,7 @@
     font-weight: 900;
     height: 70px;
     padding: 10px;
-    width: 600px;
+    width: 800px;
   }
 
   .btnEdiForm:disabled {
@@ -1174,13 +1120,17 @@
 
   .iconBtnEdit {
     font-size: 24px;
-    margin: -5px 15px;
+    margin: 0 0 5px;
   }
 
   .btnDelForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background: #cb0f21;
     border: 0 solid white;
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 2px 2px 5px black;
     color: white;
     cursor: pointer;
@@ -1188,7 +1138,7 @@
     font-size: 18px;
     font-weight: 900;
     height: 70px;
-    width: 600px;
+    width: 800px;
   }
 
   .btnDelForm:disabled {
@@ -1199,6 +1149,6 @@
 
   .iconBtnDel {
     font-size: 24px;
-    margin: -5px 15px;
+    margin: 0 0 5px;
   }
 }

@@ -37,7 +37,7 @@ class Header extends Component {
                 R$ 00,00
               </p>
             )}
-          <p className="brlHeader">BRL</p>
+          <span className="brlHeader">BRL</span>
         </div>
         <div className="profileHeader">
           <CgProfile className="iconProfile" />
@@ -45,7 +45,7 @@ class Header extends Component {
             data-testid="email-field"
             className="emailHeader"
           >
-            { email }
+            { email || localStorage.getItem('email_wallet') }
           </p>
         </div>
       </header>

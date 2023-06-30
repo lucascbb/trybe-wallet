@@ -1,4 +1,4 @@
-@media ( min-width : 320px ) {
+@media ( min-width : 320px ) and ( max-width : 374px ) {
 
   .headerEwalletForm {
     background-color: rgb(105, 105, 120);
@@ -8,10 +8,13 @@
     height: 200px;
     margin: auto;
     width: 90%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -30px;
   }
 }
 
-@media ( min-width : 375px ) {
+@media ( min-width : 375px ) and ( max-width : 424px ) {
 
   .headerEwalletForm {
     background-color: rgb(105, 105, 120);
@@ -21,10 +24,13 @@
     height: 220px;
     margin: auto;
     width: 90%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -30px;
   }
 }
 
-@media ( min-width : 425px ) {
+@media ( min-width : 425px ) and ( max-width : 767px ) {
 
   .headerEwalletForm {
     background-color: rgb(105, 105, 120);
@@ -34,11 +40,29 @@
     height: 220px;
     margin: auto;
     width: 90%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -30px;
   }
 
 }
 
-@media ( min-width : 768px ) {
+@media ( min-width : 768px ) and ( max-width : 1023px ) {
+
+  .headerEwalletForm {
+    background-color: rgb(105, 105, 120);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 2px 20px 10px rgba(0, 0, 0, 0.326);
+    height: 220px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -5px;
+  }
+}
+
+@media ( min-width : 1024px ) and ( max-width : 1300px ) {
 
   .headerEwalletForm {
     background-color: rgb(105, 105, 120);
@@ -47,33 +71,20 @@
     box-shadow: 0 2px 20px 10px rgba(0, 0, 0, 0.326);
     height: 220px;
     margin: auto;
-    width: 90%;
+    width: 95%;
   }
 }
 
-@media ( min-width : 1024px ) {
+@media ( min-width : 1301px ) and ( max-width : 1439px ) {
 
   .headerEwalletForm {
     background-color: rgb(105, 105, 120);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 0 2px 20px 10px rgba(0, 0, 0, 0.326);
-    height: 220px;
+    height: 260px;
     margin: auto;
     width: 80%;
-  }
-}
-
-@media ( min-width : 1300px ) {
-
-  .headerEwalletForm {
-    background-color: rgb(105, 105, 120);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    box-shadow: 0 2px 20px 10px rgba(0, 0, 0, 0.326);
-    height: 220px;
-    margin: auto;
-    width: 70%;
   }
 }
 

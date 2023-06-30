@@ -1,4 +1,4 @@
-@media ( min-width : 320px ) {
+@media ( min-width : 320px ) and ( max-width : 374px ) {
 
   body {
     background-image: url('../imagens/exchange4.jpg');
@@ -57,7 +57,7 @@
   }
 }
 
-@media ( min-width : 375px ) {
+@media ( min-width : 375px ) and ( max-width : 424px ) {
 
   body {
     background-image: url('../imagens/exchange4.jpg');
@@ -116,7 +116,7 @@
   }
 }
 
-@media ( min-width : 425px ) {
+@media ( min-width : 425px ) and ( max-width : 767px ) {
 
   body {
     background-image: url('../imagens/exchange4.jpg');
@@ -175,7 +175,7 @@
   }
 }
 
-@media ( min-width : 768px ) {
+@media ( min-width : 768px ) and ( max-width : 1023px ) {
 
   body {
     background-image: url('../imagens/exchange4.jpg');
@@ -234,7 +234,7 @@
   }
 }
 
-@media ( min-width : 1024px ) {
+@media ( min-width : 1024px ) and ( max-width : 1300px ) {
 
   body {
     background-image: url('../imagens/exchange3.jpg');
@@ -293,7 +293,7 @@
   }
 }
 
-@media ( min-width : 1440px ) {
+@media ( min-width : 1301px ) {
 
   body {
     background-image: url('../imagens/exchange3.jpg');

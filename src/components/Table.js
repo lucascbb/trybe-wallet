@@ -9,6 +9,13 @@ class Table extends Component {
     this.funcTable();
   }
 
+  formatarReal = (numero) => numero.toLocaleString('pt-BR', {
+    style: 'currency',
+    currency: 'BRL',
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  });
+
   removeID = ({ target }) => {
     const { dispatch, expenses } = this.props;
     const remove = expenses.filter((ele) => Number(ele.id) !== Number(target.id));
@@ -32,7 +39,7 @@ class Table extends Component {
               {tab.description}
             </td>
             <td className="value2" data-label="Valor gasto">
-              {(Number(tab.value)).toLocaleString('de-DE', { maximumFractionDigits: 2 })}
+              { this.formatarReal(Number(tab.value)) }
             </td>
             <td className="tag2" data-label="Categoria">
               {tab.tag}
@@ -44,12 +51,11 @@ class Table extends Component {
               {tab.exchangeRates[tab.currency].name.replace('/Real Brasileiro', '')}
             </td>
             <td className="cambio2" data-label="Cambio da moeda">
-              {(Number(tab.exchangeRates[tab.currency].ask))
-                .toLocaleString('de-DE', { maximumFractionDigits: 2 })}
+              { this.formatarReal(Number(tab.exchangeRates[tab.currency].ask)) }
             </td>
             <td className="valueConv2" data-label="Valor em reais">
-              {(tab.exchangeRates[tab.currency].ask * tab.value)
-                .toLocaleString('de-DE', { maximumFractionDigits: 2 })}
+              { this.formatarReal(Number(tab.exchangeRates[tab.currency].ask)
+              * Number(tab.value)) }
             </td>
             <td className="editDel2" data-label={ index + 1 }>
               <button
@@ -82,14 +88,16 @@ class Table extends Component {
       <div className="tableDivPai">
         <table className="table">
           <thead>
-            <th className="desc">Descrição</th>
-            <th className="tag">Tag</th>
-            <th className="method">Método pagamento</th>
-            <th className="value">Valor</th>
-            <th className="moeda">Moeda usada</th>
-            <th className="cambio">Valor do câmbio</th>
-            <th className="valueConv">Valor em reais</th>
-            <th className="editDel">Editar/ Excluir</th>
+            <tr>
+              <th className="desc">Descrição</th>
+              <th className="value">Valor</th>
+              <th className="tag">Tag</th>
+              <th className="method">Método pagamento</th>
+              <th className="moeda">Moeda usada</th>
+              <th className="cambio">Valor do câmbio</th>
+              <th className="valueConv">Valor em reais</th>
+              <th className="editDel">Editar/ Excluir</th>
+            </tr>
           </thead>
           <tbody>
             { expenses.length > 0 ? (this.funcTable()) : null }
